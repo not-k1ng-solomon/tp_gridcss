@@ -20,50 +20,66 @@ a {
 }
 .grid {
     display: grid;
+    grid-template-areas: "a a a a"
+                         "a a a a"
+                         "b b c c"
+                         "d e f g"
+                         "h h i j"
+                         "k k l l";
 }
 .grid-item {
     background-repeat: no-repeat;
     background-size: cover;
 }
 .grid-item-main {
+    grid-area: a;
     background-image: url(../img/bg-main.png);
 }
 .grid-item-red {
+    grid-area: b;
     background-image: url(../img/bg-red.png);
 }
 .grid-item-lgray {
+    grid-area: c;
     background-color: #f3f1ef;
 }
 .grid-item-pic1 {
+    grid-area: d;
     background-image: url(../img/bg-one.png);
 }
 .grid-item-pic2 {
+    grid-area: e;
     background-image: url(../img/bg-two.png);
 }
 .grid-item-pic3 {
+    grid-area: f;
     background-image: url(../img/bg-three.png);
 }
 .grid-item-pic4 {
+    grid-area: g;
     background-image: url(../img/bg-four.png);
 }
 .grid-item-blue-text {
-
+    grid-area: h;
 }
 .grid-item-pic5 {
+    grid-area: i;
     background-image: url(../img/bg-five.png);
 }
 .grid-item-bluebg {
-    
+    grid-area: j;
 }
 .grid-item-blue {
     background-color: #3f729b;
     color: #fff;
 }
 .grid-item-green {
+    grid-area: k;
     background-color: #2ebd59;
     color: #fff;
 }
 .grid-item-gray {
+    grid-area: l;
     background-color: #282b2f;
     color: #fff;
 }
