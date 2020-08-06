@@ -3,16 +3,19 @@ body {
     font-weight: 400;
 }
 h1 {
-    font-size: 72px;
+    font-size: 58px;
+    line-height: 70px;
 }
 h1 + p {
-    font-size: 30px;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 600;
 }
 h2 {
-    font-size: 24px;
+    font-size: 19px;
 }
 p {
-    font-size: 36px;
+    font-size: 28px;
 }
 a {
     font-size: 18px;
@@ -30,8 +33,17 @@ a {
 .grid-item {
     background-repeat: no-repeat;
     background-size: cover;
+
+}
+.grid-item h2{
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 .grid-item-main {
+    min-height: 574px;
+    padding: 185px 0 0 175px;
+    align-items: center;
+    justify-items: left;
     grid-area: a;
     background-image: url(../img/bg-main.png);
 }
@@ -39,11 +51,23 @@ a {
     grid-area: b;
     background-image: url(../img/bg-red.png);
 }
+.grid-item-lgray p{
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: 35px;
+    font-weight: 800;
+}
 .grid-item-lgray {
+    height: 346px;
+    padding-right: 180px;
+    color: #666666;
+    padding-top: 75px;
+    padding-left: 46px;
     grid-area: c;
     background-color: #f3f1ef;
 }
 .grid-item-pic1 {
+    height: 434px;
     grid-area: d;
     background-image: url(../img/bg-one.png);
 }
@@ -60,7 +84,26 @@ a {
     background-image: url(../img/bg-four.png);
 }
 .grid-item-blue-text {
+    padding: 85px 0 0 178px;
+    height: 335px;
     grid-area: h;
+}
+.grid-item-blue-text a,.grid-item-green a,.grid-item-gray a{
+    letter-spacing: 1.5px;
+    border: 2px #fff solid;
+    border-radius: 31px;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.grid-item-blue-text p,.grid-item-green p,.grid-item-gray p{
+    margin-bottom: 44px;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    line-height: 36px;
+    font-weight: 600;
 }
 .grid-item-pic5 {
     grid-area: i;
@@ -77,9 +120,13 @@ a {
     grid-area: k;
     background-color: #2ebd59;
     color: #fff;
+    padding: 97px 92px 0 178px;
+    height: 335px;
 }
 .grid-item-gray {
     grid-area: l;
     background-color: #282b2f;
     color: #fff;
+    padding: 98px 0 0 50px;
+    height: 335px;
 }
